@@ -11,6 +11,7 @@ import ChangeToSubject from './context-api/index'
 import { FirstPage } from './react_memo/first_page'
 import MemoFirstPage from './use_memo/m_first_page'
 import MemoProjectPage from './use_memo_small_project/mp_page'
+import UFirstPage from './use_callbacks/u_first_page'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -42,7 +43,8 @@ function App() {
       {/* IMPORTANT HOOKS */}
       {/* <FirstPage /> */}
       {/* <MemoFirstPage /> */}
-      <MemoProjectPage />
+      {/* <MemoProjectPage /> */}
+      <UFirstPage />
     </>
   )
 }
