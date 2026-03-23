@@ -8,6 +8,9 @@ import { Home, Article, About, Product } from "./API's/pages/"
 // FOR CONTEXT API
 import College from './context-api/components/College'
 import ChangeToSubject from './context-api/index'
+import { FirstPage } from './react_memo/first_page'
+import MemoFirstPage from './use_memo/m_first_page'
+import MemoProjectPage from './use_memo_small_project/mp_page'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -16,7 +19,7 @@ function App() {
     <>
       {/* USE STATE BASICS */}
       {/* <UseStateBasic /> */}
-      <NavBar />
+      {/* <NavBar /> */}
       {/* <main>
         <Routes>
           <Route path='/'  element={<Home/>}/>
@@ -30,9 +33,16 @@ function App() {
 
 
       {/* FOR CONTEXT API */}
-      <div className='bg-gray-700 p-10' >
+      {/* <div className='bg-gray-700 p-10' >
         <ChangeToSubject />
-      </div>
+      </div> */}
+
+
+
+      {/* IMPORTANT HOOKS */}
+      {/* <FirstPage /> */}
+      {/* <MemoFirstPage /> */}
+      <MemoProjectPage />
     </>
   )
 }
